@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-wrapper {
+    width: 95%;
+    max-width: 800px;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #64dfdf;
+}
+
+header h1 span {
+    color: #ff9f1c;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Remove bars below the search bar (input and button) */
+.search-section input {
+    width: 70%;
+    padding: 12px 15px;
+    border: none;  /* Remove border */
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: #334155;
+    color: #ffffff;
+    box-shadow: none; /* Remove shadow */
+}
+
+.search-section button {
+    padding: 12px 20px;
+    border: none; /* Remove border */
+    border-radius: 8px;
+    background: #64dfdf;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: none; /* Remove shadow */
+}
+
+.search-section button:hover {
+    background: #48bfe3;
+    transform: scale(1.1);
+}
+
+.weather-info, .forecast-section {
+    background: #334155;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.weather-info h3 {
+    font-size: 1.5rem;
+    color: #64dfdf;
+}
+
+.weather-info p, .forecast-section p {
+    margin: 5px 0;
+}
+
+.forecast-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #475569;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: scale(1.05);
+}
+
+.map {
+    height: 300px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+footer a {
+    color: #64dfdf;
+    text-decoration: none;
+}
